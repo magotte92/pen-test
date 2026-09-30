@@ -1,0 +1,15 @@
+[project]
+name = "pen-test"
+version = "0.0.0"
+description = "Pen testing tools."
+readme = "README.md"
+requires-python = ">=3.12"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py312"
+# Existing CLI modules are syntax-checked in CI and left behavior-identical.
+extend-exclude = ["src", "main.py", "programs.py"]

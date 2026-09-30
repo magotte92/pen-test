@@ -1,0 +1,3 @@
+# Runtime dependency for the existing CLI.
+# Keep this pin aligned with [project] metadata and tests/test_smoke.py.
+requests==2.34.2
